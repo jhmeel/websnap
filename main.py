@@ -10,7 +10,7 @@ import sys
 
 init(autoreset=True)
 
-class WebPageCloner:
+class Cloner:
     def __init__(self, url):
         self.url = url
         parsed_url = urllib.parse.urlparse(url)
@@ -111,7 +111,7 @@ def main():
     print_banner()
 
     url = input(f"{Fore.YELLOW}Enter the URL of the page to clone: ")
-    cloner = WebPageCloner(url)
+    cloner = Cloner(url)
     cloner.clone_page()
 
     zip_option = input(f"{Fore.YELLOW}Do you want to zip the cloned page? (y/n): ").lower()

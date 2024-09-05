@@ -12,5 +12,3 @@ env
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
-*.firebase
